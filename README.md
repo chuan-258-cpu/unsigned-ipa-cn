@@ -1,4 +1,37 @@
 # unsigned-ipa-cn
+
+## 本地项目目录
+
+| 目录 | 内容 |
+| --- | --- |
+| [ipa/original](ipa/original/) | 原始 FChat IPA |
+| [ipa/sideload](ipa/sideload/) | 手机显示名称改为“微信”的侧载包，也是重签脚本的输入 |
+| [ipa/testflight](ipa/testflight/) | 当前 TestFlight 分发包及对应 JSON 构建记录 |
+| [archive/testflight-b1](archive/testflight-b1/) | 因 `SC_Info` 路径被拒绝的构建 1，仅用于追溯 |
+| [signing/profiles](signing/profiles/) | Apple 分发描述文件 |
+| [scripts](scripts/) | IPA 构建和重签脚本 |
+| [docs](docs/) | 安装说明、可行性说明、签名配置和构建报告 |
+
+当前包：[fchat_8.0.71_appstore_b2.ipa](ipa/testflight/fchat_8.0.71_appstore_b2.ipa)，版本 `8.0.71`，构建号 `2`。
+
+2026-10-09 最近确认：构建 2 已上传并处理完成，内部群组显示“正在测试”，外部测试已提交并显示“正在等待审核”。实际后续状态以 [App Store Connect](https://appstoreconnect.apple.com/teams/576c415c-7612-4bec-ab6e-d85fd8ceb5ea/apps/6820996068/testflight) 为准。
+
+文档入口：[构建报告](docs/TestFlight构建报告.md) · [签名配置](docs/TestFlight签名配置.md) · [安装说明](docs/爱思助手安装IPA说明.md) · [可行性说明](docs/微信分身与TestFlight可行性说明.md)。JSON 构建记录保留生成时的内容；后续上传和审核状态记在构建报告中。
+
+在项目根目录生成下一个构建：
+
+```sh
+swift scripts/prepare_appstore_ipa.swift 3
+```
+
+输出 IPA 和 JSON 均位于 `ipa/testflight/`，同名现有包和归档包会拒绝覆盖。签名使用本机钥匙串里的分发身份，脚本不执行上传。
+
+`apps.json` 和 `icon/` 保留在根目录，供原仓库的应用源及图标引用使用。整理只移动文件并更新路径，没有删除 IPA 或描述文件，也没有改动包内内容。
+
+IPA 文件仅保留在本地，已通过 `.gitignore` 排除，不随 Git 提交或推送。远程仓库保留脚本、文档、描述文件和 JSON 构建记录；克隆后需自行放入对应 IPA 才能运行构建脚本。上面的 IPA 链接用于本地文件定位。
+
+## 原仓库说明
+
 **常用iOS应用(砸壳IPA)收集**
 
 *本仓库只是针对个人在用的App进行收录, 更多国际化的应用和tweaks可以看[swaggyP36000/TrollStore-IPAs](https://github.com/swaggyP36000/TrollStore-IPAs)这个仓库*

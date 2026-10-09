@@ -1,0 +1,79 @@
+{
+  "appStoreConnectAppleID" : "6820996068",
+  "appStoreConnectName" : "FChat Beta",
+  "build" : "2",
+  "bundleID" : "com.paxcapital.chatbeta",
+  "changes" : [
+    "Bundle ID",
+    "CFBundleVersion",
+    "AppIcon catalog declaration",
+    "Removed all disallowed SC_Info metadata before re-signing",
+    "Removed unsupported network-authentication background mode",
+    "Embedded company distribution profile",
+    "Re-signed all frameworks and main app",
+    "Replaced original team-specific entitlements with company profile permissions"
+  ],
+  "displayName" : "微信",
+  "entitlements" : {
+    "application-identifier" : "K242QGHJQZ.com.paxcapital.chatbeta",
+    "beta-reports-active" : true,
+    "com.apple.developer.team-identifier" : "K242QGHJQZ",
+    "get-task-allow" : false,
+    "keychain-access-groups" : [
+      "K242QGHJQZ.com.paxcapital.chatbeta"
+    ]
+  },
+  "frameworkCount" : 14,
+  "notVerified" : [
+    "Apple upload validation",
+    "TestFlight processing and review",
+    "Runtime behavior under new bundle ID",
+    "Third-party redistribution rights",
+    "Encryption export compliance",
+    "Privacy manifest completeness"
+  ],
+  "outputIPA" : "fchat_8.0.71_appstore_b2.ipa",
+  "preparedAt" : "2026-10-09T13:54:04Z",
+  "profileExpiration" : "2027-04-24T04:30:49Z",
+  "profileUUID" : "6805171f-3bd4-4872-b1de-e9062a37900d",
+  "removedStoreMetadata" : [
+    "Payload\/WeChat.app\/Frameworks\/App.framework\/SC_Info",
+    "Payload\/WeChat.app\/Frameworks\/JavaScriptCore2.framework\/SC_Info",
+    "Payload\/WeChat.app\/Frameworks\/Lottie.framework\/SC_Info",
+    "Payload\/WeChat.app\/Frameworks\/MMRouter.framework\/SC_Info",
+    "Payload\/WeChat.app\/Frameworks\/NewMessageRingUtil.framework\/SC_Info",
+    "Payload\/WeChat.app\/Frameworks\/ProtobufLite.framework\/SC_Info",
+    "Payload\/WeChat.app\/Frameworks\/SoundTouch.framework\/SC_Info",
+    "Payload\/WeChat.app\/Frameworks\/TPFFmpeg.framework\/SC_Info",
+    "Payload\/WeChat.app\/Frameworks\/TPThirdParties.framework\/SC_Info",
+    "Payload\/WeChat.app\/Frameworks\/andromeda.framework\/SC_Info",
+    "Payload\/WeChat.app\/Frameworks\/matrixreport.framework\/SC_Info",
+    "Payload\/WeChat.app\/Frameworks\/mmcronet.framework\/SC_Info",
+    "Payload\/WeChat.app\/Frameworks\/openssl.framework\/SC_Info",
+    "Payload\/WeChat.app\/Frameworks\/owl.framework\/SC_Info",
+    "Payload\/WeChat.app\/SC_Info"
+  ],
+  "sha256" : "a05110bb7607667c283dac64b184e9d911339c2efd2f689401e5577cfe12fbf7",
+  "signedExecutables" : [
+    "Payload\/WeChat.app\/WeChat",
+    "Payload\/WeChat.app\/Frameworks\/App.framework\/App",
+    "Payload\/WeChat.app\/Frameworks\/JavaScriptCore2.framework\/JavaScriptCore2",
+    "Payload\/WeChat.app\/Frameworks\/Lottie.framework\/Lottie",
+    "Payload\/WeChat.app\/Frameworks\/MMRouter.framework\/MMRouter",
+    "Payload\/WeChat.app\/Frameworks\/NewMessageRingUtil.framework\/NewMessageRingUtil",
+    "Payload\/WeChat.app\/Frameworks\/ProtobufLite.framework\/ProtobufLite",
+    "Payload\/WeChat.app\/Frameworks\/SoundTouch.framework\/SoundTouch",
+    "Payload\/WeChat.app\/Frameworks\/TPFFmpeg.framework\/TPFFmpeg",
+    "Payload\/WeChat.app\/Frameworks\/TPThirdParties.framework\/TPThirdParties",
+    "Payload\/WeChat.app\/Frameworks\/andromeda.framework\/andromeda",
+    "Payload\/WeChat.app\/Frameworks\/matrixreport.framework\/matrixreport",
+    "Payload\/WeChat.app\/Frameworks\/mmcronet.framework\/mmcronet",
+    "Payload\/WeChat.app\/Frameworks\/openssl.framework\/openssl",
+    "Payload\/WeChat.app\/Frameworks\/owl.framework\/owl"
+  ],
+  "signingCertificateSHA1" : "0AE301C7AF9ACE7152E38E2C56DFF456FB221CB9",
+  "sourceIPA" : "fchat_8.0.71_weixin.ipa",
+  "status" : "Locally verified distribution re-sign; not uploaded or Apple-validated",
+  "teamID" : "K242QGHJQZ",
+  "version" : "8.0.71"
+}
